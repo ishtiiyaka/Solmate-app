@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SolMate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SolMate</h1>
+    <span id="badge" class="badge hidden">SIMULATED DATA</span>
+  </header>
+
+  <section class="status">
+    <div><span class="label">Broker</span> <span id="broker">Connecting...</span></div>
+    <div><span class="label">Device</span> <span id="device">Unknown</span></div>
+    <div><span class="label">Last update</span> <span id="last">--</span></div>
+  </section>
+
+  <section class="grid">
+    <div class="card"><h2>Power</h2><p><span id="power">--</span> W</p></div>
+    <div class="card"><h2>Voltage</h2><p><span id="voltage">--</span> V</p></div>
+    <div class="card"><h2>Current</h2><p><span id="current">--</span> A</p></div>
+    <div class="card"><h2>Azimuth</h2><p><span id="az">--</span>&deg;</p></div>
+    <div class="card"><h2>Elevation</h2><p><span id="el">--</span>&deg;</p></div>
+    <div class="card"><h2>IMU tilt</h2><p><span id="imu">--</span>&deg;</p></div>
+    <div class="card"><h2>Mode</h2><p><span id="mode">--</span></p></div>
+    <div class="card"><h2>Temp</h2><p><span id="temp">--</span> &deg;C</p></div>
+  </section>
+
+  <!-- Replace <exact-version> with the pinned mqtt.js version you test with -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/5.10.1/mqtt.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
